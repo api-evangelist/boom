@@ -1,21 +1,45 @@
 aid: boom
 name: Boom
-description: 'Boom is a company surfaced as a portfolio company of sv-angel and added to the API Evangelist
-  network as a stub for enrichment. Sector: aerospace. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Boom Supersonic is a Colorado-based aerospace company building Overture, a
+  Mach 1.7 supersonic airliner designed to carry 64-80 passengers on
+  transoceanic routes, powered by the company's Symphony engine and assembled
+  at its Superfactory in Greensboro, North Carolina. Its XB-1 demonstrator flew
+  supersonic in early 2025. Boom was surfaced as a portfolio company of SV Angel
+  and added to the API Evangelist network. Boom publishes a corporate and
+  investor-facing web presence (newsroom, careers, privacy, terms) but exposes
+  no public developer API, OpenAPI, well-known discovery, or MCP surface, so no
+  API artifacts are available to enrich; this profile captures its verifiable
+  web and domain-security posture only.
 url: https://raw.githubusercontent.com/api-evangelist/boom/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - sv-angel
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: portfolio-lead-no-public-api
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://boomsupersonic.com/og
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Aerospace
+- Aviation
+- Supersonic
+- Aircraft Manufacturing
+- Travel
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +49,18 @@ maintainers:
 common:
 - type: Website
   url: https://boomsupersonic.com
+- type: Blog
+  url: https://boomsupersonic.com/news
+- type: Support
+  url: https://boomsupersonic.com/contact
+- type: PrivacyPolicy
+  url: https://boomsupersonic.com/privacy
+- type: TermsOfService
+  url: https://boomsupersonic.com/terms
+- type: DomainSecurity
+  url: security/boom-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
